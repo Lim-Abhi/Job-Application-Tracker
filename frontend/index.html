@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Job Application Tracker</h1>
+        <p>Track your internship and job applications</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Add Application</h2>
+
+            <form id="applicationForm">
+
+                <input
+                    type="text"
+                    id="company"
+                    placeholder="Company"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="position"
+                    placeholder="Position"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Location"
+                >
+
+                <select id="status">
+
+                    <option value="Applied">
+                        Applied
+                    </option>
+
+                    <option value="Interview">
+                        Interview
+                    </option>
+
+                    <option value="Rejected">
+                        Rejected
+                    </option>
+
+                    <option value="Offer">
+                        Offer
+                    </option>
+
+                </select>
+
+                <input
+                    type="date"
+                    id="application_date"
+                    required
+                >
+
+                <textarea
+                    id="notes"
+                    placeholder="Notes"
+                ></textarea>
+
+                <button type="submit">
+                    Add Application
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="applications-section">
+
+            <h2>Applications</h2>
+
+            <div id="applications">
+                Loading applications...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
