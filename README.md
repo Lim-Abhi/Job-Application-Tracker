@@ -1412,6 +1412,30 @@ http://localhost:8080
 
 ---
 
+## Docker Compose (Recommended)
+The most efficient way to orchestrate all services with a single command.
+
+1. Ensure you are in the root directory:
+   ```bash
+   docker compose up --build -d
+   ```
+
+2. To stop everything:
+   ```bash
+   docker compose down
+   ```
+
+---
+
+## 🔗 Access Ports & Health
+| Service | URL | Note |
+| :--- | :--- | :--- |
+| **Frontend** | [http://localhost:8080](http://localhost:8080) | Web Interface |
+| **Backend** | [http://localhost:5000](http://localhost:5000) | JSON API |
+
+
+---
+
 # Conclusion
 
 This project demonstrates a three-tier architecture without Docker Compose:
