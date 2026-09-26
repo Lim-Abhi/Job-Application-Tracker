@@ -363,7 +363,7 @@ Therefore, the Node.js backend must be running on port `5000`.
 
 # Part 2 — Run With Docker
 
-## Recommendation: If you are familiar with Docker already(easy and fast setup), go to the  bottom for (Quick Start) Section.
+## Recommendation: For experienced Docker users, see the Quick Start section at the bottom.
 
 
 The Docker deployment should consist of three containers:
@@ -967,42 +967,4 @@ The most efficient way to orchestrate all services with a single command.
 
 
 ---
-
-# Conclusion
-
-This project demonstrates a three-tier architecture without Docker Compose:
-
-```text
-Frontend
-   |
-   v
-Backend
-   |
-   v
-Database
-```
-
-The containers communicate through:
-
-```text
-job-app-net
-```
-
-The frontend is exposed on:
-
-```text
-8080
-```
-
-The backend is exposed on:
-
-```text
-5000
-```
-
-The database remains internal to the Docker network:
-
-```text
-db:3306
-```
 
